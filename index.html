@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="js/jquery-1.12.4.min.js">
+</head>
+<body>
+    <div class="Wrap">
+
+        <!-- topBanner ; 2023.06.20 생성 -->
+        <div class="topBanner">
+            <div class="container">
+                <h2><img src="img/main_logo.png" alt=""> Busan Street Food</h2>
+                <p>붕어빵, 타코야키, 계란빵 이제 돌아다니지 마세요</p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+        <!-- header ; 2023.06.20 생성 -->
+        <header class="headerWrap">
+            <div class="container">
+                <h1><img src="./N_img/logo-jeep.png" alt=""></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!"><i class="xi-star"></i> 지도</a></li>
+                        <li class="fd1"><a href="#!">붕어빵</a></li>
+                        <li class="fd2"><a href="#!">타코야키</a></li>
+                        <li class="fd3"><a href="#!">계란빵</a></li>
+                    </ul>
+                    <!--
+                    * 카카오맵 - 약도서비스
+                    * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                    * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                    -->
+                    <!-- 1. 약도 노드 -->
+                    <div id="daumRoughmapContainer1687236353312" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!-- 2. 설치 스크립트 -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1687236353312",
+                            "key" : "2f99z",
+                            "mapWidth" : "600",
+                            "mapHeight" : "280"
+                        }).render();
+                    </script>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+</body>
+</html>

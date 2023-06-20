@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');  
+
+/* topBanner */
+.topBanner {
+    font-style: bold;
+    color: #fff;
+    background: #f0422b;
+    padding: 10px 0;
+}
+
+.topBanner .container {
+    position: relative;
+    width:1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topBanner h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:24px;
+    font-weight: 100;
+    letter-spacing: 0,040em;
+    margin-bottom: 10px;
+}
+
+.topBanner img {
+    width: 30px;
+    height: 30px;
+}
+
+.topBanner p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: -0.025em;
+}
+
+.topBanner i {
+    position: absolute;
+    top:0;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* topBanner */
+
+/* header */
+
+.headerWrap {
+    background: #000;
+}
+
+.headerWrap .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.headerWrap .container>* {
+    padding:0 15px;
+    color:#fff;
+}
+
+.gnb>ul {
+    display: flex;    
+}
+
+.gnb>ul>li {
+    position:relative;
+    padding:0 20px;
+}
+
+.gnb>ul>li::after {
+    content: "";
+    position: absolute;
+    top:50%;
+    left:100%;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    transform: translate(-50%,-50%);
+}
+
+#daumRoughmapContainer1687236353312 {
+    margin: 30px;
+}
+
+/* header */
